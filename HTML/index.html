@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0 IE=edge">
+  <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
   <title>Primeiro Programa</title>
   <style>
     *{
@@ -12,32 +12,63 @@
     body{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    .section-one, .section-two{
-      padding: 5px;
-      width: 300px;
-      height: 300px;
-      margin: 10px 0px 5px 10px;
-      border: 2px solid grey;
-      color: aliceblue;
+    nav{
+      height: 50px;
+      background-color: black;
+      display:flex;
+      justify-content: left;
+      align-items: center;
+      text-transform: uppercase;
     }
-    .section-one{
-      background: lightblue;
-      background-image: url(chrome://branding/content/about-logo.png);
-      background-position: center center;
-      background-size:contain;
-      background-repeat: no-repeat;
+    ul, ol, dl{
+      display: flex;
     }
-    .section-two{
-      background: rgb(255, 156, 169);
-      background-image: url(https://logopng.com.br/logos/edge-105.png);
-      background-position: center center;
-      background-size:contain;
-      background-repeat: no-repeat;
+    li, dt, dl{
+      text-decoration: none;
+      display: flex;
+      padding: 10px;
+      justify-content: left;
+      align-items: center;
     }
-  </style>
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    a:hover{
+      color: gray;
+    }
+    dt{
+      color:darkcyan;
+      font-weight: bold;
+    }
+
+    dd{
+      color: rgb(29, 16, 212);
+      font-weight: bold;
+    }
+</style>
 </head>
 <body>
-  <section class="section-one">1</section>
-  <section class="section-two">2</section>
+  <nav>
+    <ul>
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li><a href="#">Item 4</a></li>
+    </ul>
+    <ol>
+      <li><a href="#">Item 5</a></li>
+      <li><a href="#">Item 6</a></li>
+      <li><a href="#">Item 7</a></li>
+      <li><a href="#">Item 8</a></li>
+    </ol>
+  </nav>
+  <dl>
+    <dt>Café: </dt>
+    <dd>Puro, fresco e quente</dd>
+    <dt>Leite: </dt>
+    <dd>Puro e quente</dd>
+  </dl>
+
 </body>
 </html>
