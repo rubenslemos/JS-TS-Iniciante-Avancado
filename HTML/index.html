@@ -46,9 +46,42 @@
       color: rgb(29, 16, 212);
       font-weight: bold;
     }
+    td, th{
+      border: 2px solid black;
+      width: 150px;
+      padding: 10px;
+      text-align: center;
+    }
+    table{
+      border-collapse: collapse;
+      width: 98%;
+      margin: 1%;
+    }
+    table caption{
+      color: rgb(80, 59, 59);
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-left: 5px;
+
+    }
+    tfoot td{
+      color: red;
+      font-weight: bolder;
+      background-color: rgb(248, 227, 227);
+      border: 2px solid black;
+      font-size: large;
+    }
+    tfoot td:hover{
+      color: rgb(255, 0, 255);
+    }
+    .responsive-table{
+      max-width: 100%;
+      overflow-x: auto;
+    }
 </style>
 </head>
-<body>
+<div>
   <nav>
     <ul>
       <li><a href="#">Item 1</a></li>
@@ -69,6 +102,49 @@
     <dt>Leite: </dt>
     <dd>Puro e quente</dd>
   </dl>
-
+  <div class="responsive-table">
+  <table>
+    <caption>
+      Lista de cafés prontos à venda
+    </caption>
+    <thead>
+      <tr>
+        <th>Tipos de Café</th>
+        <th>Pequeno</th>
+        <th>Valor</th>
+        <th>Grande</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Moca </td>
+        <td>300 ml </td>
+        <td>R$ 2,50 </td>
+        <td>500ml </td>
+        <td>R$ 4,50 </td>
+      </tr>
+      <tr>
+        <td>Capuchino </td>
+        <td>250ml </td>
+        <td>R$ 3,50 </td>
+        <td>400ml </td>
+        <td>R$ 6,50 </td>
+      </tr>
+      <tr>
+        <td>Com Leite </td>
+        <td>300 ml </td>
+        <td>R$ 3,00 </td>
+        <td>600ml </td>
+        <td>R$ 5,00 </td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="5">Não vendemos fiado favor não insistir</td>
+        </tr>
+      </tfoot>
+    </tbody>
+  </table>
+  </div>
 </body>
 </html>
