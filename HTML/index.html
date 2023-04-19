@@ -12,139 +12,165 @@
     body{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    nav{
-      height: 50px;
-      background-color: black;
-      display:flex;
-      justify-content: left;
-      align-items: center;
-      text-transform: uppercase;
-    }
-    ul, ol, dl{
+    label{
+      margin: 5px;
+      width: 350px;
       display: flex;
+      justify-content: space-between;
     }
-    li, dt, dl{
-      text-decoration: none;
-      display: flex;
-      padding: 10px;
-      justify-content: left;
-      align-items: center;
+    button{
+      margin: 0px 5px;
+      padding: 0px 5px;
     }
-    a{
+    div{
+      background-color: rgb(252, 158, 52);
       color: white;
-      text-decoration: none;
+      width: 360px;
+      margin: 0px;
+      padding: 0px;
     }
-    a:hover{
-      color: gray;
+    p{
+      display: flex;
+      direction: row;
+      align-items:center;
+      justify-content:space-between;  
+      padding: 5px; 
     }
-    dt{
-      color:darkcyan;
-      font-weight: bold;
+    input{
+      justify-content:space-between;
+      background-color: rgb(252, 158, 52);
     }
-
-    dd{
-      color: rgb(29, 16, 212);
-      font-weight: bold;
+    input[type=file] {
+      display: none;
     }
-    td, th{
-      border: 2px solid black;
-      width: 150px;
-      padding: 10px;
-      text-align: center;
+    .range{
+      display: flex;
+      justify-content: center;
+      width: 95%;
+      align-items: center;
+      padding-bottom: 5px;
     }
-    table{
-      border-collapse: collapse;
-      width: 98%;
-      margin: 1%;
-    }
-    table caption{
-      color: rgb(80, 59, 59);
-      text-align: left;
-      font-weight: bold;
-      margin-bottom: 10px;
+    textarea{
+      padding: 5px 0px 0px 5px;
       margin-left: 5px;
-
-    }
-    tfoot td{
-      color: red;
-      font-weight: bolder;
-      background-color: rgb(248, 227, 227);
-      border: 2px solid black;
-      font-size: large;
-    }
-    tfoot td:hover{
-      color: rgb(255, 0, 255);
-    }
-    .responsive-table{
-      max-width: 100%;
-      overflow-x: auto;
+      font-family: Verdana,apache,sans-serif;
     }
 </style>
 </head>
-<div>
-  <nav>
-    <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Item 2</a></li>
-      <li><a href="#">Item 3</a></li>
-      <li><a href="#">Item 4</a></li>
-    </ul>
-    <ol>
-      <li><a href="#">Item 5</a></li>
-      <li><a href="#">Item 6</a></li>
-      <li><a href="#">Item 7</a></li>
-      <li><a href="#">Item 8</a></li>
-    </ol>
-  </nav>
-  <dl>
-    <dt>Café: </dt>
-    <dd>Puro, fresco e quente</dd>
-    <dt>Leite: </dt>
-    <dd>Puro e quente</dd>
-  </dl>
-  <div class="responsive-table">
-  <table>
-    <caption>
-      Lista de cafés prontos à venda
-    </caption>
-    <thead>
-      <tr>
-        <th>Tipos de Café</th>
-        <th>Pequeno</th>
-        <th>Valor</th>
-        <th>Grande</th>
-        <th>Valor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Moca </td>
-        <td>300 ml </td>
-        <td>R$ 2,50 </td>
-        <td>500ml </td>
-        <td>R$ 4,50 </td>
-      </tr>
-      <tr>
-        <td>Capuchino </td>
-        <td>250ml </td>
-        <td>R$ 3,50 </td>
-        <td>400ml </td>
-        <td>R$ 6,50 </td>
-      </tr>
-      <tr>
-        <td>Com Leite </td>
-        <td>300 ml </td>
-        <td>R$ 3,00 </td>
-        <td>600ml </td>
-        <td>R$ 5,00 </td>
-      </tr>
-      <tfoot>
-        <tr>
-          <td colspan="5">Não vendemos fiado favor não insistir</td>
-        </tr>
-      </tfoot>
-    </tbody>
-  </table>
+<body>
+  <div>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+      <div>
+        <p>Formulário</p>
+          <label>Nome:
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+          </label>
+          <label for="select">Sexo:
+            <select id="sexo">
+              <optgroup label="Biológicos">
+                <option value="M" selected>Masculino</option>
+                <option value="F">Feminino</option>
+              </optgroup>
+              <optgroup label="Sociais">
+                <option value="L" selected>Lesbica</option>
+                <option value="G">Gay</option>
+                <option value="B">Bi</option>
+                <option value="T">Transsexual</option>
+                <option value="N">Não Binário</option>
+              </optgroup>
+            </select> 
+          </label>
+
+          <label>Email:
+            <input type="email" name="email" id="email" placeholder="e-mail">
+          </label>          
+          <label>Site:
+            <input type="url" name="url" id="url" placeholder="Seu Site">
+          </label>          
+          <label>Busca:
+            <input type="search" name="search" id="search" placeholder="Busca">
+          </label>          
+          <label>Telefone:
+            <input type="number" name="telefone" id="telefone" placeholder="telefone">
+          </label>
+          <label>Senha:
+            <input type="password" name="Senha" id="Senha" placeholder="Senha">
+          </label>
+      </div>
+      <div>
+        <label>Aniversário:
+          <input type="date" name="date" id="date">
+        </label>        
+        <label>Data:
+          <input type="datetime-local" name="dia-de-hoje" id="dia-de-hoje">
+        </label>          
+        <label>Horário:
+          <input type="time" name="hora" id="hora">
+        </label>          
+      </div>
+      <div>
+        <p></p>
+        <label>Cor:
+          <input type="color" name="cor" id="cor" value="#2fc369">
+        </label>        
+        <label>Sua foto:
+          <input type="file" name="foto" id="foto" accept=".png, .svg, .gif, .jpg, .jpeg, image/*" multiple>
+        </label>
+      </div>    
+      <div>
+        <p>Nível Profissional</p>
+        <label>Estudante
+          <input type="checkbox" name="estudante" id="estudante" value="true">
+        </label>        
+        <label>DEV
+          <input type="checkbox" name="dev" id="dev" value="true">
+        </label>        
+        <label>CEO
+          <input type="checkbox" name="ceo" id="ceo" value="true">
+        </label>
+      </div>
+      <div>
+        <p>Procurando emprego</p>
+        <label>Sim
+        <input type="radio" name="sim" id="sim" value="true">
+        </label>        
+        <label>Não
+          <input type="radio" name="nao" id="nao" value="true">
+        </label>        
+        <label>Quem Sabe
+          <input type="radio" name="talvez" id="talvez" value="true">
+        </label>
+      </div>
+      <div>
+        <p>Quão você está satisfeito?</p>
+        <label class="range">0&nbsp;
+        <input type="range" name="range" id="range" list="tickmarks" class="range">&nbsp;10
+        </label>
+        <datalist id="tickmarks">
+          <option value="0" label="0%">0</option>
+          <option value="10">1</option>
+          <option value="20">2</option>
+          <option value="30">3</option>
+          <option value="40">4</option>
+          <option value="50" label="50%">5</option>
+          <option value="60">6</option>
+          <option value="70">7</option>
+          <option value="80">8</option>
+          <option value="90">9</option>
+          <option value="100" label="100%">10</option>
+        </datalist>     
+      </div>
+      <div>
+        <label for="textarea">Porque deu essa nota?</label>
+        <textarea name="textarea" id="textarea" rows="5" cols="40">Diga, porque deu a nota de satisfação acima?</textarea>
+      </div>
+      <div>
+        <p>
+          <button type="reset">Limpar</button>
+          <button type="submit">OK</button>
+        </p>
+      </div>
+    </form>
   </div>
 </body>
 </html>
