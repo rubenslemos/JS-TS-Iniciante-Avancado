@@ -1,0 +1,20 @@
+Flex box
+
+Na primeira parte vimos os alinhamentos do flex box do justify-content e do align-items
+
+Quando usamos o flex-direction row o justify-content altera o eixo x e o align-items o eixo y pois o eixo x nesse caso é o principal
+
+Quando usamos o flex-direction Colum o justify-content altera o eixo y e o align-items o eixo x pois o eixo y nesse caso é o principal
+
+podemos usar alguns direcionamentos:
+flex-start = posiciona os elementos no inicio
+flex-end = posiciona os elementos no fim
+space around = posiciona os elementos com o espaçamento entre eles iguais
+space between = divide igualmente o espaço para os elementos
+stretch = estica os elementos para ocuparem todo espaço disponível no eixo
+
+Na segunda aula vimos a função flex-wrap para fazer a quebra automática de linha ou coluna quando o tamanho máximo fazendo o conteudo ocupar o tamanho máximo possível em tela sem que haja rolagem do mesmo
+
+Na terceira parte vimos como fazer alinhamento e ordenação dos elementos usando o flex-flow para isso
+
+Na ultima parte do flex vimos o poder de usar flex dentro de flex que nos dá uma grande liberdade de configuração dos elementos para desenvolvermos nossos layouts 
