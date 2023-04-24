@@ -18,11 +18,13 @@ button{
   color: black;
   background-color: white;
   border: 1px solid black;
+  border-radius: 5px;
 }
 button:hover{
   color: white;
   background-color: black;
   border: none;
+  border-radius: 5px;
 }
 div{
   background-color: rgb(247, 197, 140);
@@ -63,6 +65,7 @@ textarea{
   padding: 5px 0px 0px 5px;
   margin-left: 5px;
   font-family: Verdana,apache,sans-serif;
+  position: sticky;
 }
 option{
   font-weight: bold;
