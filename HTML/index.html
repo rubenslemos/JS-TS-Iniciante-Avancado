@@ -7,8 +7,14 @@
   <link rel="shortcut icon" href="https://vectorified.com/images/form-icon-1.png" type="image/x-icon">
 </head>
 <body>
-  <div>
-    <form action="#" method="get" target="_blank" autocomplete="off">
+  <div class="menu">
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#segunda">Segunda Pagina</a></li>
+    </ul>
+  </div>
+  <form action="#" method="get" target="_blank" autocomplete="off">
+  <div id="home">
       <div>
         <p>Formulário</p>
           <label>Nome:
@@ -29,7 +35,6 @@
               </optgroup>
             </select> 
           </label>
-
           <label>Email:
             <input type="email" name="email" id="email" placeholder="e-mail">
           </label>          
@@ -78,60 +83,50 @@
           <input type="checkbox" name="ceo" id="ceo" value="true">
         </label>
       </div>
-      <div>
-        <p>Procurando emprego</p>
-        <label>Sim
-        <input type="radio" name="sim" id="sim" value="true">
-        </label>        
-        <label>Não
-          <input type="radio" name="nao" id="nao" value="true">
-        </label>        
-        <label>Quem Sabe
-          <input type="radio" name="talvez" id="talvez" value="true">
-        </label>
-      </div>
-      <div>
-        <p>Quão você está satisfeito?</p>
-        <label class="range">0&nbsp;
-        <input type="range" name="range" id="range" list="tickmarks" class="range">&nbsp;10
-        </label>
-        <datalist id="tickmarks">
-          <option value="000">00</option>
-          <option value="010">01</option>
-          <option value="020">02</option>
-          <option value="030">03</option>
-          <option value="040">04</option>
-          <option value="050">05</option>
-          <option value="060">06</option>
-          <option value="070">07</option>
-          <option value="080">08</option>
-          <option value="090">09</option>
-          <option value="100">10</option>
-        </datalist>     
-      </div>
-      <div>
-        <label for="textarea">Porque deu essa nota?</label>
-        <textarea name="textarea" id="textarea" rows="5" cols="40">Diga, porque deu a nota de satisfação acima?</textarea>
-      </div>
-      <div>
-        <p>
-          <button type="reset">Limpar</button>
-          <button type="submit">OK</button>
-        </p>
-        <ul>
-          <li>01</li>
-          <li>02</li>
-          <li>03</li>
-          <li>04</li>
-          <li>05</li>
-          <li>06</li>
-          <li>07</li>
-          <li>08</li>
-          <li>09</li>
-          <li>10</li>
-        </ul>
-      </div>
-    </form>
   </div>
+  <div id="segunda">
+    <div>
+      <p>Procurando emprego</p>
+      <label>Sim
+      <input type="radio" name="sim" id="sim" value="true">
+      </label>        
+      <label>Não
+        <input type="radio" name="nao" id="nao" value="true">
+      </label>        
+      <label>Quem Sabe
+        <input type="radio" name="talvez" id="talvez" value="true">
+      </label>
+    </div>
+    <div>
+      <p class="segunda-pagina">Quão você está satisfeito?</p>
+      <label class="range">0&nbsp;
+      <input type="range" name="range" id="range" list="tickmarks" class="range">&nbsp;10
+      </label>
+      <datalist id="tickmarks">
+        <option value="000">00</option>
+        <option value="010">01</option>
+        <option value="020">02</option>
+        <option value="030">03</option>
+        <option value="040">04</option>
+        <option value="050">05</option>
+        <option value="060">06</option>
+        <option value="070">07</option>
+        <option value="080">08</option>
+        <option value="090">09</option>
+        <option value="100">10</option>
+      </datalist>     
+    </div>
+    <div>
+      <label for="textarea">Porque deu essa nota?</label>
+      <textarea name="textarea" id="textarea" rows="5" cols="40">Diga, porque deu a nota de satisfação acima?</textarea>
+    </div>
+    <div>
+      <p>
+        <button type="reset">Limpar</button>
+        <button type="submit">OK</button>
+      </p>
+    </div>
+  </div>
+    </form>
 </body>
 </html>

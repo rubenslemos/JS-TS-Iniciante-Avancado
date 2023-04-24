@@ -1,0 +1,3 @@
+Nessa primeira aula vimos como mudar o display pra grid e como posicionar os elementos dentro da grid modificando o tamanho das linhas e colunas e fixando o elemento na linha ou na coluna desejada.
+
+Na segunda aula vimos como dar nome a uma linha ou coluna para facilitar configurar os posicionamentos dos elementos no grid

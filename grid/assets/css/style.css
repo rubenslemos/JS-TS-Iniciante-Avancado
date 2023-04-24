@@ -1,0 +1,29 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+  color:rgb(0, 100, 100);
+  font-weight: bold;
+}
+.grid {
+  max-width:900px;
+  display: grid;
+  grid-template-columns: [um]1fr [dois]1fr [tres] 1fr [quatro];
+  grid-template-rows: [um]1fr [dois]1fr [tres] 1fr [quatro];
+  gap:10px;
+}
+.grid div{
+  display: grid;
+  background: lightskyblue;
+  min-height: 100px;
+}
+.grid div:nth-child(2){
+  background: darkblue;
+  grid-row:um / tres;
+  grid-column: um / quatro;
+}
+
